@@ -1,0 +1,219 @@
+body {
+  font-family: "spline sans";
+  line-height: 1.7;
+  color: #777;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
+  color: #222;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+:root {
+  --main: #f58d17;
+}
+
+.nav-item a:hover {
+  color: var(--main);
+}
+
+img {
+  width: 100%;
+}
+
+.collapse .btn,
+.carousel-inner .btn,
+.about-content .btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.collapse .btn-brande,
+.carousel-inner .btn-brande,
+.about-content .btn {
+  color: white;
+  background-color: var(--main);
+  border-color: var(--main);
+  font-weight: 500;
+}
+
+.collapse .btn-brande:hover,
+.carousel-inner .btn-brande:hover,
+.about-content .btn:hover {
+  color: white;
+  background-color: var(--main);
+  border-color: var(--main);
+}
+
+.carousel-inner .slide-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover1.jpg);
+  background-position: center;
+}
+
+.carousel-inner .slide-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover2.jpg);
+  background-position: center;
+}
+
+.carousel-inner .slide-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover3.jpg);
+  background-position: center;
+}
+
+.carousel-inner .bg-cover {
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 63px);
+}
+
+.carousel-inner h6::after,
+.carousel-inner h6::before {
+  content: "";
+  height: 4px;
+  width: 20px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.about-content .decore {
+  width: 60px;
+  height: 2px;
+  display: block;
+  background-color: var(--main);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.menu .intro-text,
+#feature .intro-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu .intro-text p,
+#feature .intro-text {
+  max-width: 500px;
+  margin: 16px auto 0 auto;
+}
+
+#feature {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover3.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#menu .nav-link {
+  margin: 0 8px;
+  border-radius: 100px;
+  color: #222;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-link.active {
+  background-color: var(--main);
+  color: white;
+}
+
+#menu .shadow-on-hover,
+#team .shadow-on-hover {
+  transition: all 0.2s;
+}
+
+#menu .shadow-on-hover:hover,
+#team .shadow-on-hover:hover,
+#blog .shadow-on-hover:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#team img {
+  margin-top: 20px;
+  max-width: 140px;
+  box-shadow: -10px -10px 0 var(--main);
+  border-radius: 100px;
+}
+
+#book .custom-button {
+  background-color: #f58d17;
+  border-color: #f58d17;
+  color: #fff;
+  /* Text color */
+}
+
+#blog img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.insta-post {
+  position: relative;
+  overflow: hidden;
+}
+
+.insta-posts .insta-post i {
+  width: 90px;
+  height: 90px;
+  font-size: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  color: #fff;
+}
+#Review {
+  background-image: url(../img/cover3.jpg);
+  background-size: cover;
+}
+#Review img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+#Review .quotes {
+  text-align: center;
+  color: var(--main);
+  font-size: 40px;
+}
+.insta-post img {
+  transition: all 0.4s;
+}
+.insta-post:hover img {
+  transform: scale(1.2);
+}
+.insta-post:hover i {
+  opacity: 1;
+}

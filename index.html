@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurispy</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- start-nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Qrispy_dark.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <input type="search" class="form-control search-input mb-3 mt-3" placeholder="Search"
+                    style="width: 300px; margin-right: 10px;">
+                <button type="button" class="btn btn-brande" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End-nav -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login page</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Stert-nav -->
+    <main>
+        <section id="home">
+            <div id="carouselExampleIndicators" class="carousel slide vh-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item   bg-cover text-center active bg-dark slide-1">
+                        <div class="container h-100 d-flex justify-content-center align-items-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h6 class="text-white">WELCOME TO QRISPY</h6>
+                                    <h1 class=" display-1 text-white fw-bold">Char-Grilled And Flavor-Filled</h1>
+                                    <a href="#reservation" class="btn btn-brande">Reservation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center  bg-cover bg-dark slide-2">
+                        <div class="container h-100 d-flex justify-content-center align-items-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h6 class="text-white">WELCOME TO QRISPY</h6>
+                                    <h1 class=" display-1 text-white fw-bold">Char-Grilled And Flavor-Filled</h1>
+                                    <a href="#reservation" class="btn btn-brande">Reservation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-cover text-center  bg-dark slide-3">
+                        <div class="container h-100 d-flex justify-content-center align-items-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h6 class="text-white">WELCOME TO QRISPY</h6>
+                                    <h1 class=" display-1 text-white fw-bold">Char-Grilled And Flavor-Filled</h1>
+                                    <a href="#reservation" class="btn btn-brande">Reservation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- End-slider -->
+    <!-- Start-About -->
+    <section>
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class=" col-lg-4 about-image">
+                        <img src="img/about_new.jpg" alt="">
+                    </div>
+                    <div class=" col-lg-5 about-content">
+                        <h1>ABOUT US</h1>
+                        <div class="decore"></div>
+                        <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Nemo Nesciunt Voluptates Doloribus
+                            Quidem. Dignissimos, Asperiores Molestias?
+
+                            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Adipisci Velit Corporis
+                            Debitis Blanditiis Hic, Ipsam Magni Exercitationem Ullam Quibusdam A Ad!</p>
+                        <a href="" class="btn btn-brande">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-About -->
+    <!-- start-Menu -->
+    <section id="menu" class="mt-5">
+        <div class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 intro-text">
+                        <h1>Explore Our Menu</h1>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae Sint Temporibus Natus
+                            Optio Eveniet Nobis Accusantium?</p>
+                    </div>
+                    <div class="conatiner menu-content">
+                        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item m-3" role="presentation">
+                                <button class="nav-link active btn btn-brande" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">
+                                    All Items
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link m-3" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">
+                                    Breakfast
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link m-3" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">
+                                    Lunsh
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link m-3" id="pills-dinner-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
+                                    aria-selected="false">
+                                    Dinner
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_1.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_2.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_3.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_4.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_5.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_6.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_7.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_8.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_1.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_2.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_1.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_2.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_3.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_4.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-dinner" role="tabpanel"
+                                aria-labelledby="pills-dinner-tab">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_5.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_6.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_7.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="menu-item bg-white shadow-on-hover">
+                                            <img src="img/item_8.jpg" alt="">
+                                            <div class="menu-item-content  text-center">
+                                                <div class="stars mt-2" style="color: gold;">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p class="my-2">rated(4.5)</p>
+                                                <h6 class="text-black fw-bold">Fudgy Chewy Brownies</h6>
+                                                <p>Baked salmon to a fresh salad made with chickpeas, arugula, herbs and
+                                                    olives </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- end-Menu -->
+    <!-- start-feature -->
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Why To Choose Us?</h1>
+                    <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae Sint
+                        Temporibus Natus Optio
+                        Eveniet Nobis Accusantium?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-white fw-bold">
+                                <i class="fas fa-wifi" style="font-size: 40px;"></i>
+                            </div>
+                            <h3 class="text-white fw-bold">Free Wifi</h3>
+                            <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nam,
+                                Similique </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-white fw-bold">
+                                <i class="fas fa-pizza-slice" style="font-size: 40px;"></i>
+                            </div>
+                            <h3 class="text-white fw-bold">Premium ingredients</h3>
+                            <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nam,
+                                Similique </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-white fw-bold">
+                                <i class="fas fa-truck" style="font-size: 40px;"></i>
+                            </div>
+                            <h3 class="text-white fw-bold">Fast Delivery</h3>
+                            <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nam,
+                                Similique </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-white fw-bold">
+                                <i class="far fa-clock" style="font-size: 40px;"></i>
+                            </div>
+                            <h3 class="text-white fw-bold">Quick to prepare</h3>
+                            <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nam,
+                                Similique </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-feature -->
+    <!-- start-feature -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-black">Our Team Members</h1>
+                    <p class="text-black">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae Sint
+                        Temporibus Natus Optio Eveniet Nobis Accusantium?</p>
+                </div>
+            </div>
+            <div class="row gy-3 mt-3 mb-3">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item card shadow-on-hover px-4 py-5">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-black fw-bold">
+                                <img src="img/team_01.png" alt="">
+                            </div>
+                            <h3 class="text-muted fw-bold">Yousef Don</h3>
+                            <p class="text-muted">Chef de Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item card shadow-on-hover px-4 py-5">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-black fw-bold">
+                                <img src="img/team_03.png" alt="">
+                            </div>
+                            <h3 class="text-muted fw-bold">Yousef Don</h3>
+                            <p class="text-muted">Chef de Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item card shadow-on-hover px-4 py-5">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-black fw-bold">
+                                <img src="img/team_02.png" alt="">
+                            </div>
+                            <h3 class="text-muted fw-bold">Doe John</h3>
+                            <p class="text-muted">Executive Chef </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item card shadow-on-hover px-4 py-5">
+                        <div class="menu-item-content  text-center">
+                            <div class="icon text-black fw-bold">
+                                <img src="img/team_01.png" alt="">
+                            </div>
+                            <h3 class="text-muted fw-bold">John Doe</h3>
+                            <p class="text-muted">Main Cheif </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start-slider-coments -->
+    <section id="Review">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5 text-center">
+                    <h1 class="text-white">Our Client saying </h1>
+                    <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae Sint
+                        Temporibus Natus Optio Eveniet Nobis Accusantium?</p>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="review bg-white">
+                                    <div class="quotes">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>There Are Many Variations Of Passages Of Have Suffered
+                                        Alteration In
+                                        Some Form, By
+                                        Injected Humour, Or Randomised Words Which Don't Look Even Slightly Believable.
+                                        If You Are Going To Use A Passage Of Lorem Ipsum, You Need To Be Sure There Isn
+                                        'T</p>
+                                    <div class="person text-center">
+                                        <img src="img/avatar_01.jpg" alt="">
+                                        <h4>John Doe</h4>
+                                        <div class="stars mt-2" style="color: gold;">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mb-5 ">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 ">
+                                <div class="review bg-white">
+                                    <div class="quotes">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>There Are Many Variations Of Passages Of Have Suffered
+                                        Alteration In
+                                        Some Form, By
+                                        Injected Humour, Or Randomised Words Which Don't Look Even Slightly Believable.
+                                        If You Are Going To Use A Passage Of Lorem Ipsum, You Need To Be Sure There Isn
+                                        'T</p>
+                                    <div class="person text-center">
+                                        <img src="img/avatar_02.jpg" alt="">
+                                        <h4>John Doe</h4>
+                                        <div class="stars mt-2" style="color: gold;">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mb-5 ">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="review bg-white">
+                                    <div class="quotes">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>There Are Many Variations Of Passages Of Have Suffered
+                                        Alteration In
+                                        Some Form, By
+                                        Injected Humour, Or Randomised Words Which Don't Look Even Slightly Believable.
+                                        If You Are Going To Use A Passage Of Lorem Ipsum, You Need To Be Sure There Isn
+                                        'T</p>
+                                    <div class=" person text-center">
+                                        <img src="img/avatar_03.jpg" alt="">
+                                        <h4>John Doe</h4>
+                                        <div class="stars mt-2" style="color: gold;">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- end-slider-comments -->
+    <!-- end-Team -->
+    <!-- start-book -->
+    <section id="book">
+        <div class="book">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="text-black">Book Table</h1>
+                        <p class="text-black">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae
+                            Sint Temporibus Natus Optio Eveniet Nobis Accusantium?</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Full Name" name="name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <input type="date" class="form-control" placeholder="Full Name" name="name">
+                        </div>
+                        <div class="col">
+                            <input type="time" class="form-control" placeholder="time" name="email">
+                        </div>
+                    </div>
+                    <div class="row mt-3 buttone">
+                        <div class="col">
+                            <textarea class="form-control" rows="5" id="comment" name="text"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3 d-flex">
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <a class="btn order btn-sm p-2 mt-2 custom-button">send message</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end-book -->
+    <!-- start-galary -->
+    <section class="insta-posts mt-5">
+        <div class="row g-0">
+            <div class="col-lg-3 col-sm-6 insta-post">
+                <div class="image">
+                    <img src="img/insta_post02.jpg" alt="">
+                </div>
+                <i class="fab fa-instagram fa-2x px-2"></i>
+            </div>
+            <div class="col-lg-3 col-sm-6 insta-post">
+                <div class="image">
+                    <img src="img/insta_post03.jpg" alt="">
+                </div>
+                <i class="fab fa-instagram fa-2x px-2"></i>
+            </div>
+            <div class="col-lg-3 col-sm-6 insta-post">
+                <div class="image">
+                    <img src="img/insta_post04.jpg" alt="">
+                </div>
+                <i class="fab fa-instagram fa-2x px-2"></i>
+            </div>
+            <div class="col-lg-3 col-sm-6 insta-post">
+                <div class="image">
+                    <img src="img/insta_post02.jpg" alt="">
+                </div>
+                <i class="fab fa-instagram fa-2x px-2"></i>
+            </div>
+        </div>
+    </section>
+    <!-- end-galary -->
+    <!-- start-blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5 text-center">
+                    <h1 class="text-black">Blog Posts</h1>
+                    <p class="text-black">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Recusandae
+                        Sint Temporibus Natus Optio Eveniet Nobis Accusantium?</p>
+                </div>
+            </div>
+            <div class="row gy-3 items">
+                <div class="col-sm-6 item">
+                    <div class="blog-post shadow-on-hover d-flex">
+                        <img src="img/item_1.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted In 10/1/2022</p>
+                            <h4 class="hovere">
+                                <a href="" style="text-decoration: none; color: black;">We Make Delicious Food</a>
+                            </h4>
+                            <p>We Are Waitting For Your Order</p>
+                            <a href="" style="text-decoration: none; color:#F58d17;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post shadow-on-hover d-flex">
+                        <img src="img/item_2.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted In 10/1/2022</p>
+                            <h4>
+                                <a href="" style="text-decoration: none; color: black;">We Make Delicious Food</a>
+                            </h4>
+                            <p>We Are Waitting For Your Order</p>
+                            <a href="" style="text-decoration: none; color:#F58d17;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post shadow-on-hover d-flex">
+                        <img src="img/item_3.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted In 10/1/2022</p>
+                            <h4>
+                                <a href="" style="text-decoration: none; color: black;">We Make Delicious Food</a>
+                            </h4>
+                            <p>We Are Waitting For Your Order</p>
+                            <a href="" style="text-decoration: none; color:#F58d17;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post shadow-on-hover d-flex">
+                        <img src="img/item_4.jpg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>Posted In 10/1/2022</p>
+                            <h4>
+                                <a href="" style="text-decoration: none; color: black;">We Make Delicious Food</a>
+                            </h4>
+                            <p>We Are Waitting For Your Order</p>
+                            <a href="" style="text-decoration: none; color:#F58d17;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-blog -->
+    <!-- start-footer -->
+    <footer class="py-3 text-white mt-5">
+        <div class="container">
+            <div class="row text-white-50 gy-4">
+                <div class="col-lg-4">
+                    <div class="content">
+                        <div class="img">
+                            <img src="img/Qrispy_white.svg" alt="">
+                        </div>
+                        <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Reprehenderit
+                            Architecto Unde
+                            Magnam.</p>
+                        <div class="icon text-white">
+                            <i class="fab fa-facebook fa-2x px-2"></i>
+                            <i class="fab fa-youtube fa-2x px-2"></i>
+                            <i class="fab fa-instagram fa-2x px-2"></i>
+                            <i class="fab fa-google-play fa-2x px-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <p class="fs-4 fw-bold text-white">CONTACT</p>
+                        <p class="text-white">P:(03) 9283 4726</p>
+                        <p class="text-white">E:enquiries@mill.co</p>
+                        <p class="text-white">A: 14 Paramore Street Mornington</p>
+                        <p class="text-white">Peninsula Victoria 3552</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <p class="fs-4 fw-bold text-white">OPENING HOURS</p>
+                        <p class="text-white">Monday-Friday : 08:00 - 22:00</p>
+                        <p class="text-white">saturday-Sunday : 08:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="fs-3  d-flex align-items-center justify-content-center mt-0 py-3">crated by <b
+                style="color:#F58d17">Mohamed Amgad</b></h2>
+    </footer>
+    <!-- end-footer -->
+    <script src=" js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
